@@ -1,0 +1,7 @@
+state/
+*.token
+__pycache__/
+.DS_Store
+.hosted-state/
+.env
+.env.*
