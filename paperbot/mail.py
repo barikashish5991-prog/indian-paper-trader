@@ -26,6 +26,9 @@ def settings():
     result={k:os.environ.get(k,'').strip() for k in names}
     if not all(result.values()): raise SafetyError('Email secrets are incomplete; configure SMTP and recipient in GitHub Actions secrets')
     if any('\n' in v or '\r' in v for v in result.values()): raise SafetyError('Invalid email configuration')
+    # Gmail displays app passwords in groups separated by spaces.
+    if result['SMTP_HOST'].lower() == 'smtp.gmail.com':
+        result['SMTP_PASSWORD']=result['SMTP_PASSWORD'].replace(' ','')
     # One recipient only; no arbitrary address-list expansion.
     for key in ('EMAIL_FROM','ALERT_EMAIL'):
         value=result[key]
@@ -46,8 +49,18 @@ def send_message(subject, body, key):
             smtp.login(c['SMTP_USER'],c['SMTP_PASSWORD'])
             refused=smtp.send_message(message)
             if refused: raise SafetyError('Email recipient was refused')
+    except smtplib.SMTPAuthenticationError:
+        raise SafetyError('Email login rejected. Check that SMTP_USER matches the Google account that issued the app password and replace SMTP_PASSWORD if needed. Queued messages retained.') from None
+    except smtplib.SMTPRecipientsRefused:
+        raise SafetyError('Email recipient rejected. Check ALERT_EMAIL. Queued messages retained.') from None
+    except smtplib.SMTPSenderRefused:
+        raise SafetyError('Email sender rejected. Check EMAIL_FROM matches the authenticated account. Queued messages retained.') from None
+    except ssl.SSLError:
+        raise SafetyError('Email TLS connection failed. Queued messages retained.') from None
+    except smtplib.SMTPResponseException as error:
+        raise SafetyError('Email provider rejected the request (SMTP code '+str(error.smtp_code)+'). Queued messages retained.') from None
     except (OSError,smtplib.SMTPException):
-        raise SafetyError('Email delivery failed; queued messages retained for retry. Check SMTP settings and provider access.') from None
+        raise SafetyError('Email connection failed. Check SMTP host and provider availability. Queued messages retained.') from None
 
 
 def deliver(db, now, sender=send_message):
