@@ -3,6 +3,7 @@ import csv
 import io
 import json
 import os
+import smtplib
 import sqlite3
 import tempfile
 import unittest
@@ -86,6 +87,19 @@ class HostedTests(unittest.TestCase):
             smtp.send_message.assert_called_once()
         with patch.dict(os.environ,dict(env,ALERT_EMAIL='a@example.invalid,b@example.invalid')):
             with self.assertRaises(SafetyError): settings()
+
+    def test_gmail_password_spaces_and_safe_auth_error(self):
+        env=dict(SMTP_HOST='smtp.gmail.com',SMTP_USER='test@example.invalid',
+                 SMTP_PASSWORD='abcd efgh ijkl mnop',EMAIL_FROM='test@example.invalid',
+                 ALERT_EMAIL='to@example.invalid')
+        with patch.dict(os.environ,env),patch('paperbot.mail.smtplib.SMTP') as transport:
+            smtp=transport.return_value.__enter__.return_value
+            smtp.login.side_effect=smtplib.SMTPAuthenticationError(535,b'secret-provider-response')
+            with self.assertRaisesRegex(SafetyError,'Email login rejected') as caught:
+                send_message('Test','Body','test')
+            smtp.login.assert_called_once_with('test@example.invalid','abcdefghijklmnop')
+            self.assertNotIn('secret-provider-response',str(caught.exception))
+            self.assertNotIn('abcdefghijklmnop',str(caught.exception))
 
     def test_email_secrets_not_in_export(self):
         with patch.dict(os.environ,{'SMTP_PASSWORD':'test-secret-marker'}):
