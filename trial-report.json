@@ -4,19 +4,93 @@
   "fingerprint": "55818648195e",
   "cash": 100000.0,
   "initial": 100000,
-  "latest": null,
-  "curve": [],
+  "latest": {
+    "day": "2026-09-15",
+    "cash": 100000.0,
+    "holdings": 0.0,
+    "equity": 100000.0,
+    "benchmark": 100000.0,
+    "gross": 0.0,
+    "drawdown": 0.0
+  },
+  "curve": [
+    {
+      "day": "2026-09-15",
+      "cash": 100000.0,
+      "holdings": 0.0,
+      "equity": 100000.0,
+      "benchmark": 100000.0,
+      "gross": 0.0,
+      "drawdown": 0.0
+    }
+  ],
   "positions": [],
   "orders": [],
   "fills": [],
-  "decisions": [],
-  "events": [],
+  "decisions": [
+    {
+      "day": "2026-09-15",
+      "symbol": "HDFCBANK",
+      "action": "SKIP",
+      "reason": "Not selected: trend, momentum, liquidity or sector filter",
+      "features": "{\"adv_rupees\": 20548985674.6675, \"available_at\": \"2026-09-15T11:50:43.896422+00:00\", \"close\": 716.55, \"momentum\": -0.017078189300411606, \"trend_average\": 743.905, \"version\": \"nse-hosted-paper-v1\"}"
+    },
+    {
+      "day": "2026-09-15",
+      "symbol": "INFY",
+      "action": "SKIP",
+      "reason": "Not selected: trend, momentum, liquidity or sector filter",
+      "features": "{\"adv_rupees\": 9496201794.645, \"available_at\": \"2026-09-15T11:50:43.896422+00:00\", \"close\": 1077.0, \"momentum\": -0.05518027897183975, \"trend_average\": 1114.264, \"version\": \"nse-hosted-paper-v1\"}"
+    },
+    {
+      "day": "2026-09-15",
+      "symbol": "ITC",
+      "action": "SKIP",
+      "reason": "Not selected: trend, momentum, liquidity or sector filter",
+      "features": "{\"adv_rupees\": 3716063997.825, \"available_at\": \"2026-09-15T11:50:43.896422+00:00\", \"close\": 258.0, \"momentum\": -0.055118110236220486, \"trend_average\": 275.291, \"version\": \"nse-hosted-paper-v1\"}"
+    },
+    {
+      "day": "2026-09-15",
+      "symbol": "LT",
+      "action": "SKIP",
+      "reason": "Not selected: trend, momentum, liquidity or sector filter",
+      "features": "{\"adv_rupees\": 5376223360.940001, \"available_at\": \"2026-09-15T11:50:43.896422+00:00\", \"close\": 3850.7, \"momentum\": -0.057748305478748096, \"trend_average\": 3961.6820000000002, \"version\": \"nse-hosted-paper-v1\"}"
+    },
+    {
+      "day": "2026-09-15",
+      "symbol": "RELIANCE",
+      "action": "SKIP",
+      "reason": "Not selected: trend, momentum, liquidity or sector filter",
+      "features": "{\"adv_rupees\": 13872538837.075, \"available_at\": \"2026-09-15T11:50:43.896422+00:00\", \"close\": 1235.3, \"momentum\": -0.06132218844984805, \"trend_average\": 1299.478, \"version\": \"nse-hosted-paper-v1\"}"
+    },
+    {
+      "day": "2026-09-15",
+      "symbol": "TCS",
+      "action": "SKIP",
+      "reason": "Not selected: trend, momentum, liquidity or sector filter",
+      "features": "{\"adv_rupees\": 5970553393.055, \"available_at\": \"2026-09-15T11:50:43.896422+00:00\", \"close\": 2251.0, \"momentum\": -0.026889157876534564, \"trend_average\": 2292.218, \"version\": \"nse-hosted-paper-v1\"}"
+    }
+  ],
+  "events": [
+    {
+      "id": 2,
+      "at": "2026-09-15T11:51:16.633788+00:00",
+      "level": "INFO",
+      "message": "Session 2026-09-15 processed and paper ledger reconciled"
+    },
+    {
+      "id": 1,
+      "at": "2026-09-15T11:51:16.633091+00:00",
+      "level": "INFO",
+      "message": "Trial initialized; historical data used only for warm-up, not reported as forward profit"
+    }
+  ],
   "paused": false,
   "risk_halted": false,
-  "last_check": null,
+  "last_check": "2026-09-15T11:50:43.896422+00:00",
   "last_error": "",
-  "started_at": null,
-  "expires_at": null,
+  "started_at": "2026-09-15T11:50:43.896422+00:00",
+  "expires_at": "2026-10-13T11:50:43.896422+00:00",
   "trial_complete": false,
   "sessions": 0,
   "fees": 0,

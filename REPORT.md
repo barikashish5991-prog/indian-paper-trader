@@ -1,8 +1,8 @@
 # Indian paper trial
 
-Status: AWAITING FIRST EVENING DATA CHECK
+Status: ACTIVE
 
-Last completed session: None
+Last completed session: 2026-09-15
 
 Virtual cash: INR 100,000.00
 
