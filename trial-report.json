@@ -5,11 +5,11 @@
   "cash": 100000.0,
   "initial": 100000,
   "latest": {
-    "day": "2026-09-18",
+    "day": "2026-09-21",
     "cash": 100000.0,
     "holdings": 0.0,
     "equity": 100000.0,
-    "benchmark": 100737.01715927129,
+    "benchmark": 101201.90490588859,
     "gross": 0.0,
     "drawdown": 0.0
   },
@@ -49,12 +49,63 @@
       "benchmark": 100737.01715927129,
       "gross": 0.0,
       "drawdown": 0.0
+    },
+    {
+      "day": "2026-09-21",
+      "cash": 100000.0,
+      "holdings": 0.0,
+      "equity": 100000.0,
+      "benchmark": 101201.90490588859,
+      "gross": 0.0,
+      "drawdown": 0.0
     }
   ],
   "positions": [],
   "orders": [],
   "fills": [],
   "decisions": [
+    {
+      "day": "2026-09-21",
+      "symbol": "HDFCBANK",
+      "action": "SKIP",
+      "reason": "Between scheduled rebalances",
+      "features": "{\"adv_rupees\": 22059985639.6325, \"available_at\": \"2026-09-21T11:51:43.374503+00:00\", \"close\": 739.5, \"momentum\": 0.01726391086044421, \"trend_average\": 736.363, \"version\": \"nse-hosted-paper-v1\"}"
+    },
+    {
+      "day": "2026-09-21",
+      "symbol": "INFY",
+      "action": "SKIP",
+      "reason": "Between scheduled rebalances",
+      "features": "{\"adv_rupees\": 9804963535.835001, \"available_at\": \"2026-09-21T11:51:43.374503+00:00\", \"close\": 1038.5, \"momentum\": -0.07359500446030331, \"trend_average\": 1113.236, \"version\": \"nse-hosted-paper-v1\"}"
+    },
+    {
+      "day": "2026-09-21",
+      "symbol": "ITC",
+      "action": "SKIP",
+      "reason": "Between scheduled rebalances",
+      "features": "{\"adv_rupees\": 3522079897.175, \"available_at\": \"2026-09-21T11:51:43.374503+00:00\", \"close\": 267.0, \"momentum\": -0.008908685968819552, \"trend_average\": 273.82, \"version\": \"nse-hosted-paper-v1\"}"
+    },
+    {
+      "day": "2026-09-21",
+      "symbol": "LT",
+      "action": "SKIP",
+      "reason": "Between scheduled rebalances",
+      "features": "{\"adv_rupees\": 5513806299.525, \"available_at\": \"2026-09-21T11:51:43.374503+00:00\", \"close\": 3904.8, \"momentum\": -0.04598094307354017, \"trend_average\": 3956.04, \"version\": \"nse-hosted-paper-v1\"}"
+    },
+    {
+      "day": "2026-09-21",
+      "symbol": "RELIANCE",
+      "action": "SKIP",
+      "reason": "Between scheduled rebalances",
+      "features": "{\"adv_rupees\": 14642049894.99, \"available_at\": \"2026-09-21T11:51:43.374503+00:00\", \"close\": 1247.4, \"momentum\": -0.052127659574467966, \"trend_average\": 1295.194, \"version\": \"nse-hosted-paper-v1\"}"
+    },
+    {
+      "day": "2026-09-21",
+      "symbol": "TCS",
+      "action": "SKIP",
+      "reason": "Between scheduled rebalances",
+      "features": "{\"adv_rupees\": 6541929907.3, \"available_at\": \"2026-09-21T11:51:43.374503+00:00\", \"close\": 2128.7, \"momentum\": -0.0752823631624675, \"trend_average\": 2299.026, \"version\": \"nse-hosted-paper-v1\"}"
+    },
     {
       "day": "2026-09-18",
       "symbol": "HDFCBANK",
@@ -226,6 +277,12 @@
   ],
   "events": [
     {
+      "id": 6,
+      "at": "2026-09-21T11:51:45.500279+00:00",
+      "level": "INFO",
+      "message": "Session 2026-09-21 processed and paper ledger reconciled"
+    },
+    {
       "id": 5,
       "at": "2026-09-18T11:50:00.221449+00:00",
       "level": "INFO",
@@ -258,12 +315,12 @@
   ],
   "paused": false,
   "risk_halted": false,
-  "last_check": "2026-09-18T12:33:05.797285+00:00",
+  "last_check": "2026-09-21T11:51:43.374503+00:00",
   "last_error": "",
   "started_at": "2026-09-15T11:50:43.896422+00:00",
   "expires_at": "2026-10-13T11:50:43.896422+00:00",
   "trial_complete": false,
-  "sessions": 3,
+  "sessions": 4,
   "fees": 0,
   "slippage": 0,
   "config": {

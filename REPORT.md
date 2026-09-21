@@ -2,7 +2,7 @@
 
 Status: ACTIVE
 
-Last completed session: 2026-09-18
+Last completed session: 2026-09-21
 
 Virtual cash: INR 100,000.00
 
