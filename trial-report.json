@@ -5,11 +5,11 @@
   "cash": 100000.0,
   "initial": 100000,
   "latest": {
-    "day": "2026-09-21",
+    "day": "2026-09-22",
     "cash": 100000.0,
     "holdings": 0.0,
     "equity": 100000.0,
-    "benchmark": 101201.90490588859,
+    "benchmark": 100778.59248620455,
     "gross": 0.0,
     "drawdown": 0.0
   },
@@ -58,12 +58,75 @@
       "benchmark": 101201.90490588859,
       "gross": 0.0,
       "drawdown": 0.0
+    },
+    {
+      "day": "2026-09-22",
+      "cash": 100000.0,
+      "holdings": 0.0,
+      "equity": 100000.0,
+      "benchmark": 100778.59248620455,
+      "gross": 0.0,
+      "drawdown": 0.0
     }
   ],
   "positions": [],
-  "orders": [],
+  "orders": [
+    {
+      "id": "9d55cd75cfb0b553eb3fdab1",
+      "signal_day": "2026-09-22",
+      "created_at": "2026-09-22T11:50:25.819201+00:00",
+      "symbol": "HDFCBANK",
+      "side": "BUY",
+      "qty": 32,
+      "status": "PENDING",
+      "reason": "Positive momentum, above trend, liquidity and sector filters passed",
+      "adv": 22954563360.552498
+    }
+  ],
   "fills": [],
   "decisions": [
+    {
+      "day": "2026-09-22",
+      "symbol": "HDFCBANK",
+      "action": "BUY",
+      "reason": "Positive momentum, above trend, liquidity and sector filters passed",
+      "features": "{\"adv_rupees\": 22954563360.552498, \"available_at\": \"2026-09-22T11:50:25.819201+00:00\", \"close\": 738.6, \"momentum\": 0.013168724279835509, \"trend_average\": 734.7760000000001, \"version\": \"nse-hosted-paper-v1\"}"
+    },
+    {
+      "day": "2026-09-22",
+      "symbol": "INFY",
+      "action": "SKIP",
+      "reason": "Not selected: trend, momentum, liquidity or sector filter",
+      "features": "{\"adv_rupees\": 9801807915.064999, \"available_at\": \"2026-09-22T11:50:25.819201+00:00\", \"close\": 1029.4, \"momentum\": -0.08902654867256632, \"trend_average\": 1111.772, \"version\": \"nse-hosted-paper-v1\"}"
+    },
+    {
+      "day": "2026-09-22",
+      "symbol": "ITC",
+      "action": "SKIP",
+      "reason": "Not selected: trend, momentum, liquidity or sector filter",
+      "features": "{\"adv_rupees\": 3502602859.8050003, \"available_at\": \"2026-09-22T11:50:25.819201+00:00\", \"close\": 265.8, \"momentum\": -0.014460511679644017, \"trend_average\": 273.543, \"version\": \"nse-hosted-paper-v1\"}"
+    },
+    {
+      "day": "2026-09-22",
+      "symbol": "LT",
+      "action": "SKIP",
+      "reason": "Not selected: trend, momentum, liquidity or sector filter",
+      "features": "{\"adv_rupees\": 5495748643.684999, \"available_at\": \"2026-09-22T11:50:25.819201+00:00\", \"close\": 3866.4, \"momentum\": -0.05466992665036674, \"trend_average\": 3954.798, \"version\": \"nse-hosted-paper-v1\"}"
+    },
+    {
+      "day": "2026-09-22",
+      "symbol": "RELIANCE",
+      "action": "SKIP",
+      "reason": "Not selected: trend, momentum, liquidity or sector filter",
+      "features": "{\"adv_rupees\": 14828113227.679998, \"available_at\": \"2026-09-22T11:50:25.819201+00:00\", \"close\": 1240.4, \"momentum\": -0.05298518857840884, \"trend_average\": 1294.0639999999999, \"version\": \"nse-hosted-paper-v1\"}"
+    },
+    {
+      "day": "2026-09-22",
+      "symbol": "TCS",
+      "action": "SKIP",
+      "reason": "Not selected: trend, momentum, liquidity or sector filter",
+      "features": "{\"adv_rupees\": 6749024047.835, \"available_at\": \"2026-09-22T11:50:25.819201+00:00\", \"close\": 2105.0, \"momentum\": -0.07841162821242498, \"trend_average\": 2297.496, \"version\": \"nse-hosted-paper-v1\"}"
+    },
     {
       "day": "2026-09-21",
       "symbol": "HDFCBANK",
@@ -277,6 +340,12 @@
   ],
   "events": [
     {
+      "id": 7,
+      "at": "2026-09-22T11:50:27.334298+00:00",
+      "level": "INFO",
+      "message": "Session 2026-09-22 processed and paper ledger reconciled"
+    },
+    {
       "id": 6,
       "at": "2026-09-21T11:51:45.500279+00:00",
       "level": "INFO",
@@ -315,12 +384,12 @@
   ],
   "paused": false,
   "risk_halted": false,
-  "last_check": "2026-09-21T12:32:03.017697+00:00",
+  "last_check": "2026-09-22T11:50:25.819201+00:00",
   "last_error": "",
   "started_at": "2026-09-15T11:50:43.896422+00:00",
   "expires_at": "2026-10-13T11:50:43.896422+00:00",
   "trial_complete": false,
-  "sessions": 4,
+  "sessions": 5,
   "fees": 0,
   "slippage": 0,
   "config": {
