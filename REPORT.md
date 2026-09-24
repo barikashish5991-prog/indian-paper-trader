@@ -2,11 +2,11 @@
 
 Status: ACTIVE
 
-Last completed session: 2026-09-23
+Last completed session: 2026-09-24
 
 Virtual cash: INR 76,384.08
 
-Virtual equity: INR 99,976.08
+Virtual equity: INR 99,708.88
 
 Last error: None
 

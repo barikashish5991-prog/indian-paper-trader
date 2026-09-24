@@ -5,13 +5,13 @@
   "cash": 76384.08,
   "initial": 100000,
   "latest": {
-    "day": "2026-09-23",
+    "day": "2026-09-24",
     "cash": 76384.08,
-    "holdings": 23592.0,
-    "equity": 99976.08,
-    "benchmark": 101137.65212790082,
-    "gross": 0.23597644556577932,
-    "drawdown": 0.00023919999999999497
+    "holdings": 23324.8,
+    "equity": 99708.88,
+    "benchmark": 99777.00506463074,
+    "gross": 0.23392901414598177,
+    "drawdown": 0.0029112000000000027
   },
   "curve": [
     {
@@ -76,6 +76,15 @@
       "benchmark": 101137.65212790082,
       "gross": 0.23597644556577932,
       "drawdown": 0.00023919999999999497
+    },
+    {
+      "day": "2026-09-24",
+      "cash": 76384.08,
+      "holdings": 23324.8,
+      "equity": 99708.88,
+      "benchmark": 99777.00506463074,
+      "gross": 0.23392901414598177,
+      "drawdown": 0.0029112000000000027
     }
   ],
   "positions": [
@@ -83,9 +92,9 @@
       "symbol": "HDFCBANK",
       "qty": 32,
       "average": 737.997475,
-      "last": 737.25,
-      "value": 23592.0,
-      "unrealized": -23.919200000000274
+      "last": 728.9,
+      "value": 23324.8,
+      "unrealized": -291.119200000001
     }
   ],
   "orders": [
@@ -115,6 +124,48 @@
     }
   ],
   "decisions": [
+    {
+      "day": "2026-09-24",
+      "symbol": "HDFCBANK",
+      "action": "HOLD",
+      "reason": "Between scheduled rebalances",
+      "features": "{\"adv_rupees\": 23481295822.19, \"available_at\": \"2026-09-24T11:51:55.115771+00:00\", \"close\": 728.9, \"momentum\": 0.002337733773377204, \"trend_average\": 731.602, \"version\": \"nse-hosted-paper-v1\"}"
+    },
+    {
+      "day": "2026-09-24",
+      "symbol": "INFY",
+      "action": "SKIP",
+      "reason": "Between scheduled rebalances",
+      "features": "{\"adv_rupees\": 9593394479.439999, \"available_at\": \"2026-09-24T11:51:55.115771+00:00\", \"close\": 1014.5, \"momentum\": -0.09419642857142863, \"trend_average\": 1109.088, \"version\": \"nse-hosted-paper-v1\"}"
+    },
+    {
+      "day": "2026-09-24",
+      "symbol": "ITC",
+      "action": "SKIP",
+      "reason": "Between scheduled rebalances",
+      "features": "{\"adv_rupees\": 3507061748.2225, \"available_at\": \"2026-09-24T11:51:55.115771+00:00\", \"close\": 268.0, \"momentum\": -0.008325624421831601, \"trend_average\": 273.262, \"version\": \"nse-hosted-paper-v1\"}"
+    },
+    {
+      "day": "2026-09-24",
+      "symbol": "LT",
+      "action": "SKIP",
+      "reason": "Between scheduled rebalances",
+      "features": "{\"adv_rupees\": 5449094663.99, \"available_at\": \"2026-09-24T11:51:55.115771+00:00\", \"close\": 3858.4, \"momentum\": -0.044501126767539145, \"trend_average\": 3957.9120000000003, \"version\": \"nse-hosted-paper-v1\"}"
+    },
+    {
+      "day": "2026-09-24",
+      "symbol": "RELIANCE",
+      "action": "SKIP",
+      "reason": "Between scheduled rebalances",
+      "features": "{\"adv_rupees\": 15356713076.73, \"available_at\": \"2026-09-24T11:51:55.115771+00:00\", \"close\": 1219.2, \"momentum\": -0.06070878274268099, \"trend_average\": 1291.638, \"version\": \"nse-hosted-paper-v1\"}"
+    },
+    {
+      "day": "2026-09-24",
+      "symbol": "TCS",
+      "action": "SKIP",
+      "reason": "Between scheduled rebalances",
+      "features": "{\"adv_rupees\": 6627871789.705, \"available_at\": \"2026-09-24T11:51:55.115771+00:00\", \"close\": 2087.0, \"momentum\": -0.08061674008810571, \"trend_average\": 2293.232, \"version\": \"nse-hosted-paper-v1\"}"
+    },
     {
       "day": "2026-09-23",
       "symbol": "HDFCBANK",
@@ -412,6 +463,12 @@
   ],
   "events": [
     {
+      "id": 9,
+      "at": "2026-09-24T11:51:56.998106+00:00",
+      "level": "INFO",
+      "message": "Session 2026-09-24 processed and paper ledger reconciled"
+    },
+    {
       "id": 8,
       "at": "2026-09-23T11:52:05.245316+00:00",
       "level": "INFO",
@@ -462,12 +519,12 @@
   ],
   "paused": false,
   "risk_halted": false,
-  "last_check": "2026-09-23T12:34:21.250842+00:00",
+  "last_check": "2026-09-24T11:51:55.115771+00:00",
   "last_error": "",
   "started_at": "2026-09-15T11:50:43.896422+00:00",
   "expires_at": "2026-10-13T11:50:43.896422+00:00",
   "trial_complete": false,
-  "sessions": 6,
+  "sessions": 7,
   "fees": 51.58,
   "slippage": 23.539199999999255,
   "config": {
